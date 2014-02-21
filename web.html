@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>www.lijinxin.com</title>
+  	<link rel="stylesheet" type="css/text" href="C:\Users\asus\Desktop\notedeeath\web.css">
+    <script type="text/javascript">
+    window.onload = function(){
+      imgMove();
+    }
+    function imgChange() {
+      var myImages = new Array("img/headimg.jpg","img/gif.gif","img/uc.jpg");
+      var newIndex;
+      var newIndex = Math.round(Math.random()*2);
+      while(document.img1.src.indexOf(myImages[newIndex]) != -1){
+      newIndex = Math.round(Math.random()*2); 
+      }
+      document.img1.src = myImages[newIndex]
+    }
+    function getStyle (obj,attr) {
+        if (obj.currentStyle) {
+          return obj.currentStyle[attr]
+        }
+        else{
+          return getComputedStyle(obj,false)[attr]
+        }
+      };
+    function imgMove(){
+      var oUl = document.getElementById('ul_change');
+      var oLi = oUl.getElementsByTagName('li');
+      var oBtn1 = document.getElementById('photo_bt1');
+      var oBtn2 = document.getElementById('photo_bt2');
+      oUl.innerHTML += oUl.innerHTML ;
+      oUl.innerHTML += oUl.innerHTML;
+      oUl.style.width = parseInt(getStyle(oLi[0],'width')) * oLi.length + oLi.length * 10 + 'px';
+      var iSpeed = -4;
+      var timer = null;
+      function move(){
+        oBtn1.onclick = function(){
+          iSpeed = -4
+        };
+        oBtn2.onclick = function(){
+          iSpeed = 4
+        };
+        oUl.style.left = oUl.offsetLeft + iSpeed + 'px';
+        if (oUl.offsetLeft <= -1102) {
+          oUl.style.left = -552 + 'px'
+        }
+        else if (oUl.offsetLeft >= 0) {
+          oUl.style.left = -552 + 'px'
+        };
+      };
+      var timer = setInterval(move,30);
+      for (var i = 0; i < oLi.length; i++) {
+        oLi[i].onmouseover = function(){
+          clearInterval(timer);
+          var oChar = this.getElementsByTagName('h5')[0];
+          oChar.style.color = 'blue';
+        };
+        oLi[i].onmouseout = function(){
+          var oChar = this.getElementsByTagName('h5')[0];
+          oChar.style.color = 'white';
+          timer = setInterval(move,30)
+        }
+      };
+    };
+    </script>
+  </head>
+    <body>
+      <div class="frame">
+        <div class="header">
+            <div class="mini_box">
+                <a href="#">sitemap</a>
+                <a href="#">search</a>
+                <a href="#">userarea</a>
+              <span class="login_topright">
+                <a href="#"><img src="img/facebook.gif"></a>
+                <a href="#"><img src="img/twitter.gif"></a>
+                <a href="#"><img src="img/wifi.gif"></a>
+              </span>
+            </div> 
+        </div>
+        <div class="frame_body">
+          <div class="frame_top">
+            <div class="logo_link">
+            </div>
+              <span id="search_right">  
+              <span class="search_frame"><img src="img/searchbar.png"/></span>
+              <input type="text" value="search here" class="text">
+              <input type="button" value="" class="sear_btn">
+            </span>
+              <div class="nav">
+                <ul>
+                  <li><a href="#">HOME</a></li>
+                  <li><a href="#">ABOUT</a></li>
+                  <li><a href="#">SERVICES</a></li>
+                  <li><a href="#">PROJECTS</a></li>
+                  <li><a href="#">SOLUTIONS</a></li>
+                  <li><a href="#">BLOG</a></li>
+                  <li><a href="#">CONTACTS</a></li>
+                  <li><a href="#">CONTACTS</a></li>
+                </ul>
+              </div>
+              <div id="photo_preview">
+                <img name = "img1" src="img/png.png"/>
+              </div>
+              <div id="photo_frame">
+                <ul>
+                  <li>Crysis-Be The Weapon Trailer</li>
+                  <li>xbox 360,RATED MATURE</li>
+                  <li><a href="#">watch now</a></li>
+                </ul>
+              </div>
+              <div class="translate">
+                <ul>
+                  <li onclick = "imgChange()"></li>
+                  <li onclick = "imgChange()"></li>
+                  <li onclick = "imgChange()"></li>
+                </ul>
+              </div>
+          </div>
+          <div id="frame_content">
+            <div id="content_position">
+              <div id="content_left">
+                <div class="content_top_left">
+                </div>
+                <div class="content_bot_left">
+                  <h2>Featured Games</h2>
+                  <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id molestie enim. Suspendisse consequat urna non ante gravida euismod. In in nibh vestibulum at tellus viverra nulla.</h5>
+                  <div id="photo_change">
+                    <div id="photo_bt1"></div>
+                    <div id="photo_bt2"></div>
+                    <div id="pho_container">
+                      <ul id="ul_change">
+                        <li>
+                          <img src="img/headimg.jpg">
+                          <h5>TITLE 1 GOES HERE</h5>
+                        </li>
+                        <li>
+                          <img src="img/gif.gif">
+                          <h5>TITLE 2 GOES HERE</h5>
+                        </li>
+                        <li>
+                          <img src="img/uc.jpg">
+                          <h5>TITLE 3 GOES HERE</h5>
+                        </li>
+                        <li>
+                          <img src="img/photo.png">
+                          <h5>TITLE 4 GOES HERE</h5>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="content_right">
+                <div class="content_top_right">
+                  <h1>Services</h1>
+                   <div class="content_link">
+                    <ul>
+                      <li><a href="#">fbvuf jdbvufd dfjvbu gkfjiog</a></li>
+                      <li><a href="#">dub jhcbv budfdvhudud gfnfdin</a></li>
+                      <li><a href="#">fdvfudb fdbbvy jfdbu fngigg</a></li>
+                      <li><a href="#">fnfhb jfdbfu jfbufuihu gfihg</a></li>
+                      <li><a href="#"> dnsuvh dhud ihsd gfjhggf</a></li>
+                      <li><a href="#">fdbvyfddf fdbvfdyh gfngfgn</a></li>
+                      <li><a href="#">fhguf jfdbufd kfdnhu fgnjgg</a></li>
+                    </ul>
+                   </div>
+                </div>
+                <div class="content_bot_right">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="footer">
+              <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Solutons</a></li>
+                <li><a href="">Jobs</a></li>
+                <li><a href="">Contacts</a></li>
+              </ul>
+              <ul>
+                <li>copyright2011</li>
+                <li>sitename</li>
+                <li><a href="#">Css-Free-Templates.com</a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </body>
+</html>

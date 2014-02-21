@@ -1,0 +1,372 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+.frame{
+	width: 1252px;
+	height: 1420px;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	background: url(img/img2.gif);
+}
+.header{
+	width: auto;
+	height: 37px;
+	background: url(img/img1.gif);
+}
+.mini_box{
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 7px
+}
+.mini_box a{
+	color: white;
+	text-decoration: none;
+	font-family:  Arial,Verdana,Sans-serif;
+	font-size: 13px
+}
+a:hover{
+	color: red;
+	text-decoration:underline;
+}
+.login_topright{
+	float: right;
+	padding-top: 3px;
+	width: 79px
+}
+.frame_body{
+	margin-right: auto;
+	margin-left: auto;
+	width: 955px;
+	height: 1319px;
+}
+.frame_top{
+	height: 600px;
+	margin-top: 20px;
+	padding: 0;
+
+}
+.logo_link{
+	width: 286px;
+	height: 36px;
+	float: left;
+	background: url(img/logo_link.gif) no-repeat;
+}
+.text{
+	position: absolute;
+	right: 192px;
+	width: 204px;
+	height: 29px;
+	background:none;
+	border: none;
+	color: white;
+	font-size: 15px;
+	outline: none;
+
+}
+.search_frame{
+	float:right;
+}
+.sear_btn{
+	width: 44px;
+	height: 31px;
+	position: relative;
+	left:  624px;
+	background: none;
+	border: none;
+	outline: none;
+}
+.nav {
+	margin: 55px 0px 0px 0px;
+	padding: 0;
+}
+.nav ul{
+	margin-left:16px;
+}
+.nav ul li{
+	list-style: none;
+	margin: 0;
+	float: left;
+	width: 114px;
+	height: 59px;
+	background: #1d85c0;
+	border: solid #424242 1px  ;
+	text-align: center; 
+	text-shadow:black 5px 2px 8px
+}
+.nav ul li:first-child{
+	border-radius: 5px 0px 0px 5px;
+}
+.nav ul li:last-child{
+	border-radius: 0px 5px 5px 0px;
+}
+.nav ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	font-family: Arial,Verdana,Sans-serif ;
+	line-height: 64px;
+	display: block;
+}
+.nav ul li:hover{
+	background-color: #e3e3e3;	
+}
+#photo_preview{
+	margin-top: 135px;
+	height: 358px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #ffffff;
+	border-radius: 10px 10px 0px 0px;
+}
+#photo_preview ul li{
+	list-style: none;
+}
+#photo_preview img{
+	width: 955px;
+	height: 358px;
+}
+.hide{
+	display: none;
+
+}
+#photo_frame{
+	margin-bottom: 0px;
+	height: 61px;
+	background-color: #191919;
+	border-radius: 0px 0px 10px 10px;
+	text-shadow:black 5px 2px 8px;
+	box-shadow: black 5px 5px 8px;
+}
+#photo_frame ul{
+	margin: 0px;
+}
+#photo_frame ul li{
+	list-style: none;
+	margin-left: 20px;
+	margin-top: 23px;
+	float: left;
+	color: #393938;
+	font-size: 13px;
+}
+#photo_frame ul li:first-child{
+	margin-left: 202px;
+	margin-top: 10px;
+	font-size: 20px;
+	color: #FFFFA5;
+	font-family: Arial,Verdana,Sans-serif;
+}
+#photo_frame ul li:last-child{
+	margin-top: 10px;
+	width: 115px;
+	height: 32px;
+	background-color: #2275b4;
+	border-radius: 10px;
+	text-align: center;
+}
+#photo_frame ul li a{
+	text-decoration: none;
+	line-height: 30px;
+	display: block;
+	font-size: 14px;
+	font-family: Arial,Verdana,Sans-serif;
+	color: #FFFFA5
+}
+#photo_frame ul li:last-child:hover{
+	background-color: blue
+}
+.translate ul{
+	margin-left: 434px;
+	margin-top: -7px;
+}
+.translate ul li{
+	margin: 11px;
+	float: left;
+	list-style: none;
+	background-color: #cbcbcb;
+	width: 19px;
+	height: 19px;
+	border-radius: 10px
+}
+.translate ul li:hover{
+	background-color: #0571bb
+}
+#frame_content{
+	margin-top: 34px;
+	height: 634px;
+	background-color: #141414;
+	border-radius: 10px;
+	box-shadow: black 5px 5px 5px;
+	filter:alpha(opacity=50); 
+    -moz-opacity:0.5; 
+    opacity:0.7;
+    padding-top: 33px;
+}
+#content_position{
+	width: 938px;
+	height: 619px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#content_left{
+	width: 619px;
+	height: 619px;
+    display: inline-block;
+}
+.content_top_left{
+	width: 619px;
+	height: 225px;
+	background-color: yellow
+}
+.content_bot_left{
+	width: 619px;
+	height: 315px;
+	margin-top: 78px;
+	position: relative;
+	padding: 0
+
+}
+.content_bot_left h2{
+	width: 593px;
+	font-size: 27.95px;
+	position:absolute;
+	top: 17px;
+	left: 26px;
+	border-bottom: 1px solid white;
+	padding-bottom: 17px;
+	font-family: Myriad Pro;
+	color: white;
+}
+.content_bot_left h5{
+	width: 593px;
+	font-size: 12px;
+	font-family: arial;
+	position: absolute;
+	top: 86px;
+	left: 26px;
+	color: white;
+}
+#photo_change{
+	width: 593px;
+	height: 154px;
+	position: absolute;
+	top: 154px;
+	left: 26px;
+	background-color:black;
+	border-radius: 6px;
+	overflow: hidden;
+}
+#photo_bt1{
+	width: 14px;
+	height: 19px;
+	background: url(img/img18.gif) no-repeat black;
+	position: absolute;
+	top: 76px;
+	left: 9px;
+}
+#photo_bt2{
+	width: 14px;
+	height: 19px;
+	background: url(img/img19.gif) no-repeat black;
+	position: absolute;
+	top: 76px;
+	right: 9px;
+}
+#pho_container{
+	width: 540px;
+	height: 140px;
+	position: absolute;
+	top: 5px;
+	left: 25px;
+	overflow: hidden;
+}
+#pho_container ul{
+	position: absolute;
+	left: -552px;
+}
+#pho_container li{
+	float: left;
+	margin-left: 10px;
+	position: relative;
+}
+#pho_container img{
+	width: 128px;
+	height: 114px;
+}
+#pho_container h5{
+	font-size: 11px;
+	font-family: arial;
+	position: absolute;
+	top: 118px;
+	left: 10px;
+}
+#content_right{
+	width: 289px;
+	height: 569px;
+	float: right;
+}
+.content_top_right{
+	width: 289px;
+	height: 225px;
+	margin-top:-21px; 
+}
+.content_top_right h1{
+	color: white;
+	font-size: Arial,Verdana,Sans-serif
+}
+.content_link{
+	width: 289px;
+	height: 225px;
+	border-top: solid 1px ;
+}
+.content_link ul{
+	margin-left: -23px
+}
+.content_link ul li{
+	margin-top: 3px;
+	list-style: square ;
+	color: white
+
+}
+.content_link ul li a{
+	color: #2660D5;
+}
+.content_link ul li a:hover{
+	color: white
+}
+.content_bot_right{
+	width: 289px;
+	height: 315px;
+	background-color: yellow;
+	margin-top: 78px;
+}
+#footer ul{
+     float: bottom
+}
+#footer ul li{
+	list-style: none;
+	margin: 5px;
+	float: left;
+}
+#footer ul li a{
+	color:#cbcbcb;
+	text-decoration: none;
+}
+#footer ul li a:hover{
+	text-decoration: underline; 
+	color: white
+}
+#footer ul:first-child{
+	float: left;
+}
+#footer ul:last-child{
+	float: right;
+}
+
+
+
